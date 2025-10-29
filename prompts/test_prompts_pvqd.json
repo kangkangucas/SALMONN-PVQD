@@ -1,0 +1,5 @@
+{
+  "breathiness_evaluation_onlyscore_test": "<Speech><SpeechHere></Speech> Rate the breathiness on a scale of 0 to 100 and answer with the score only.",
+  "roughness_evaluation_onlyscore_test": "<Speech><SpeechHere></Speech> Rate the roughness on a scale of 0 to 100 and provide only the score.",
+  "strain_evaluation_onlyscore_test": "<Speech><SpeechHere></Speech> Rate the vocal strain from 0 to 100 and return only the score."
+}

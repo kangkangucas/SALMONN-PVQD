@@ -14,11 +14,11 @@
 
 model:
   # paths
-  llama_path: "path to llama model"
-  whisper_path: "path to whisper model"
-  beats_path: "path to beats model"
+  llama_path: "./llama_path/vicuna-7b-v1.5"
+  whisper_path: "./whisper_path"
+  beats_path: "./beats_path/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt"
 
-  ckpt: "model ckpt" # if not "", load model from ckpt for training or evaluation
+  ckpt: "./ckpt/finetuned_SALMONN_7B_2.pth" # model used for decoding
 
   freeze_whisper: True
   freeze_beats: True
@@ -42,8 +42,8 @@ model:
 
   multi_prompt: True
   prompt_template: "USER: {}\nASSISTANT:"
-  prompt_path: "prompts/train_prompt.json"
-  test_prompt_path: "prompts/test_prompt.json"
+  prompt_path: "prompts/train_prompts.json"
+  test_prompt_path: "prompts/test_prompts.json"
   max_txt_len: 300
   end_sym: "</s>"
 

@@ -1,0 +1,17 @@
+{
+    "breathiness_evaluation_onlyscore": [
+        "<Speech><SpeechHere></Speech> Please evaluate the level of breathiness in this speech sample and answer only with a score from 0 to 100, where higher scores indicate more audible airflow and a more airy or weak voice quality, and lower scores indicate clearer and more firmly closed phonation.",
+        "<Speech><SpeechHere></Speech> Give me only a breathiness score between 0 and 100. Higher values mean the voice sounds more airy or has noticeable breath leakage.",
+        "<Speech><SpeechHere></Speech> Rate the breathiness of this voice on a 0–100 scale and respond with the score only. A higher score reflects stronger audible airflow."
+    ],
+    "roughness_evaluation_onlyscore": [
+        "<Speech><SpeechHere></Speech> Please evaluate the roughness of the voice from 0 to 100, where higher scores indicate more irregular vocal fold vibration and a harsher or hoarser sound quality. Answer only with the score.",
+        "<Speech><SpeechHere></Speech> Provide only a roughness score (0–100). Higher scores mean the voice sounds more hoarse or unstable.",
+        "<Speech><SpeechHere></Speech> Rate the roughness of this speech sample on a scale of 0 to 100. Respond with the score only, where higher values represent more audible vocal harshness."
+    ],
+    "strain_evaluation_onlyscore": [
+        "<Speech><SpeechHere></Speech> Please evaluate the strain in the voice on a scale from 0 to 100, where higher scores indicate increased vocal tension or pressed phonation. Respond with the score only.",
+        "<Speech><SpeechHere></Speech> Give me only a strain score (0–100). Higher values reflect greater vocal effort or compression.",
+        "<Speech><SpeechHere></Speech> Rate the level of strain in this speech sample between 0 and 100 and return only the score. Higher scores represent a more tense and effortful vocal quality."
+    ]
+}

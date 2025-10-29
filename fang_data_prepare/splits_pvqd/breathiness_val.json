@@ -1,0 +1,149 @@
+{
+  "annotation": [
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT044.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "71.66666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT020.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "65.83333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT043.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "29.83333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1017.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "5.833333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT095.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "18.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj30007.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "22.875"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9007.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "22.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT055.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "51.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2011.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "1.833333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT118.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "90.83333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT019.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "53.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1006.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "18.66666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj5001.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "38.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT024.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "3.333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT058.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "84.66666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj4006.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "17.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1030.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "33.66666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ4002.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "2.25"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT049.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "9.833333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj6005.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "27.375"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT110.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "7.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9021.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "3.333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL19.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "12.83333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT031.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "25.16666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9024.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "6.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT012.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "33.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT007.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "2.833333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9018.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "1.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL17.wav",
+      "task": "breathiness_evaluation_onlyscore",
+      "text": "7.666666667"
+    }
+  ]
+}

@@ -1,0 +1,1174 @@
+{
+  "annotation": [
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1022.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "44.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL02.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "65.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT067.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL13.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.333333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT006.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "0.8333333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5014.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "13.75"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT029.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "21.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "82.33333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1007.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.833333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL11.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "26.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj4005.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "25.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1008.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "3.6666666666666665"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9019.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT096.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "0.3333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "12.875"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1020.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.166666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA1001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "3.3333333333333335"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9011.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.833333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT081.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "66.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj30004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "14.125"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT106.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "41.833333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj6001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT011.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "44.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA7004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "17.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT034.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "34.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL05.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "34.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5018.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "1.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT030.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "55.833333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT066.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "52.833333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL12.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "39.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9008.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "27.666666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA1002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "2.8333333333333335"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT126.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "19.333333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5010.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "14.375"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2014.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "13.166666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT108.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "61.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT015.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "63.166666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA2007.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "1.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT127.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "22.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2008.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "2.8333333333333335"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT073.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL06.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "20.166666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL04.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.166666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA2004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "17.166666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "24.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT125.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.166666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "19.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT082.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "39.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj30001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "43.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "49.166666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT092.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "18.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT042.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.666666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ1004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "19.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "54.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "27.333333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT130.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "14.833333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT136.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "78.66666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT078.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "0.3333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT051.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "50.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT107.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "15.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9010.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "21.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT121.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "18.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2013.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "10.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT116.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "29.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT027.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "22.666666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA7009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "25.666666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj30006.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "12.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.833333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.666666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT064.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "59.833333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9017.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.833333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT117.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9013.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.333333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ1003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "3.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj6003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.75"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT086.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "12.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj4004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.75"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT041.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "62.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA5003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "24.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2012.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "10.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1011.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "12.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj4008.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.125"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT018.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "24.666666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "12.333333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT137.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "14.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT131.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "23.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT032.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "14.166666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT063.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "2.8333333333333335"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj5007.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.875"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT091.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "45.333333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ7001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "3.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL10.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT134.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9027.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj4003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA1005.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT084.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT088.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "61.833333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ1002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT089.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "2.8333333333333335"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA7003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "39.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT074.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.166666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj30005.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "10.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA7006.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "39.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5011.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "22.375"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1012.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA7005.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT045.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "3.6666666666666665"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj30002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "18.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5017.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "15.875"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5019.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.875"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/sj4009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.25"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9015.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "1.8333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ4001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT119.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "32.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT077.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "37.166666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT087.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "70.33333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2005.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.166666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9026.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "3.3333333333333335"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT056.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT098.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT112.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.333333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT026.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT033.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL20.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "23.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT060.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1018.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "33.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT028.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "22.333333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "2.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1027.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT040.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1026.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "29.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT069.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "27.333333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT053.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "53.333333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT061.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "37.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT013.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "44.833333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2010.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.166666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT093.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT075.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "17.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5020.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.875"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "17.666666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT022.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "24.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT123.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "35.833333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5015.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "13.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2017.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "17.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1029.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "36.125"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1016.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "41.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5006.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "13.375"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT071.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "14.166666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1015.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "25.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9023.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9006.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "10.833333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT133.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "1.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj30008.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.375"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT017.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "42.166666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT057.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "10.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA1009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "75.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL03.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "56.166666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT038.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "18.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "2.1666666666666665"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA8001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "24.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT083.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj6007.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "19.375"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT070.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "16.666666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA7011.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "46.333333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9016.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.833333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5008.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "1.25"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT080.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "23.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9014.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "0.6666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL09.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "23.166666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT010.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT094.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "62.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT037.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "31.166666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL07.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "12.166666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT097.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "24.333333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1013.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9025.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.166666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT039.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "32.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1023.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "29.166666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "63.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT036.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "34.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA8002.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "19.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT054.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "28.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5005.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT046.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "57.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT132.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "16.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT048.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.833333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT068.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "21.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2009.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "9.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1025.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "69.33333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj6004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "26.25"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT111.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT072.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "16.666666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT135.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "17.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT109.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT122.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "33.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1005.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "64.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT079.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "39.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA7012.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT050.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "49.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA10001.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "17.833333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1028.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1010.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.166666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT129.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2016.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "21.625"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA90026.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "4.666666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1014.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT062.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2007.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.833333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT047.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/LA9020.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "8.333333333333334"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/Sj6006.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "3.75"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5012.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "18.875"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT124.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT065.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "38.166666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT128.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "1.1666666666666667"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/NYU1019.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "7.333333333333333"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT103.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "35.166666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL08.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "13.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5004.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "6.125"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT076.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "55.333333333333336"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT016.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "18.166666666666668"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT052.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "0.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT100.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "11.666666666666666"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT102.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "25.333333333333332"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/BL21.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "25.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT085.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "16.5"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT008.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "55.666666666666664"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ5021.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "16.75"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/SJ2003.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "5.0"
+    },
+    {
+      "path": "/scratch/project_2011211/fang/data/PerceptualVoiceQualitiesDatabase/AudioFiles_16k/PT114.wav",
+      "task": "roughness_evaluation_onlyscore",
+      "text": "20.666666666666668"
+    }
+  ]
+}
