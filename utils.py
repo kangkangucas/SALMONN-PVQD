@@ -21,6 +21,7 @@ import soundfile as sf
 import numpy as np
 
 from dist_utils import is_main_process, get_world_size, get_rank
+from dataset import BalancedMultiTaskSampler, MultiTaskDataset
 
 
 def now():
@@ -38,6 +39,12 @@ def setup_logger():
 
 
 def get_dataloader(dataset, config, is_train=True, use_distributed=True):
+    batch_size = config.batch_size_train if is_train else config.batch_size_eval
+
+    # Check if this is a multi-task dataset
+    is_multi_task = isinstance(dataset, MultiTaskDataset)
+    use_balanced_sampler = getattr(config, "use_balanced_sampler", False) if is_multi_task else False
+
     if use_distributed:
         sampler = DistributedSampler(
             dataset,
@@ -45,12 +52,22 @@ def get_dataloader(dataset, config, is_train=True, use_distributed=True):
             num_replicas=get_world_size(),
             rank=get_rank()
         )
+    elif is_multi_task and use_balanced_sampler and is_train:
+        # Use balanced sampler for multi-task training
+        num_tasks = len(dataset.task_names)
+        sampler = BalancedMultiTaskSampler(
+            dataset,
+            batch_size=batch_size,
+            num_tasks=num_tasks,
+            shuffle=True,
+            seed=42
+        )
     else:
         sampler = None
 
     loader = DataLoader(
         dataset,
-        batch_size=config.batch_size_train if is_train else config.batch_size_eval,
+        batch_size=batch_size,
         num_workers=config.num_workers,
         pin_memory=True,
         sampler=sampler,

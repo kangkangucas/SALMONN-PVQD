@@ -48,24 +48,45 @@ model:
   end_sym: "</s>"
 
 datasets:
+  # Single task mode (set multi_task: False to use these)
   train_ann_path: "fang_data_prepare/splits_pvqd/breathiness_train.json"
   valid_ann_path: "fang_data_prepare/splits_pvqd/breathiness_val.json"
   test_ann_path: "fang_data_prepare/splits_pvqd/breathiness_test.json"
 
+  # Multi-task mode (set multi_task: True to use these)
+  multi_task: True
+  train_task_paths:
+    breathiness: "fang_data_prepare/splits_pvqd/breathiness_train.json"
+    roughness: "fang_data_prepare/splits_pvqd/roughness_train.json"
+    strain: "fang_data_prepare/splits_pvqd/strain_train.json"
+
+  valid_task_paths:
+    breathiness: "fang_data_prepare/splits_pvqd/breathiness_val.json"
+    roughness: "fang_data_prepare/splits_pvqd/roughness_val.json"
+    strain: "fang_data_prepare/splits_pvqd/strain_val.json"
+
+  test_task_paths:
+    breathiness: "fang_data_prepare/splits_pvqd/breathiness_test.json"
+    roughness: "fang_data_prepare/splits_pvqd/roughness_test.json"
+    strain: "fang_data_prepare/splits_pvqd/strain_test.json"
+
   whisper_path: "./whisper_path"
+
+  # Balanced sampling settings
+  use_balanced_sampler: True  # Use BalancedMultiTaskSampler for balanced batch sampling
 
 run:
   # log & settings
   seed: 42
-  output_dir: "./output_dir_breathiness"
+  output_dir: "./output_dir"
   evaluate: False # if True, only evaluate model on test data
 
   log_freq: 5
   epoch_based: False
   iters_per_epoch: 200 # if 100, the loss is lower while the vaild agg_metrics is higher.
   accum_grad_iters: 1
-  batch_size_train: 8
-  batch_size_eval: 8
+  batch_size_train: 12
+  batch_size_eval: 12
   num_workers: 8
 
   device: "cuda:0" 
@@ -83,3 +104,13 @@ run:
     min_lr: 1e-5
     weight_decay: 0.05
     beta2: 0.999
+
+generate:
+  max_new_tokens: 200
+  num_beams: 4
+  do_sample: False
+  min_length: 1
+  temperature: 1.0
+  top_p: 0.9
+  repetition_penalty: 1.0
+  length_penalty: 1.0

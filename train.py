@@ -23,7 +23,7 @@ from utils import *
 from config import Config
 from dist_utils import get_rank, init_distributed_mode
 from models import load_model
-from dataset import SALMONNDataset
+from dataset import SALMONNDataset, MultiTaskDataset
 from runner import Runner
 
 
@@ -74,11 +74,26 @@ def main():
     model = load_model(model_config)
 
     # build datasets
-    datasets = {
-        "train": SALMONNDataset(data_config.train_ann_path, data_config.whisper_path),
-        "valid": SALMONNDataset(data_config.valid_ann_path, data_config.whisper_path),
-        "test": SALMONNDataset(data_config.test_ann_path, data_config.whisper_path),
-    }
+    multi_task = getattr(data_config, "multi_task", False)
+
+    if multi_task:
+        # Multi-task training mode
+        train_task_paths = getattr(data_config, "train_task_paths", {})
+        valid_task_paths = getattr(data_config, "valid_task_paths", {})
+        test_task_paths = getattr(data_config, "test_task_paths", {})
+
+        datasets = {
+            "train": MultiTaskDataset(train_task_paths, data_config.whisper_path),
+            "valid": MultiTaskDataset(valid_task_paths, data_config.whisper_path),
+            "test": MultiTaskDataset(test_task_paths, data_config.whisper_path),
+        }
+    else:
+        # Single task training mode
+        datasets = {
+            "train": SALMONNDataset(data_config.train_ann_path, data_config.whisper_path),
+            "valid": SALMONNDataset(data_config.valid_ann_path, data_config.whisper_path),
+            "test": SALMONNDataset(data_config.test_ann_path, data_config.whisper_path),
+        }
 
     # build runner
     runner = Runner(cfg, model, datasets, job_id)

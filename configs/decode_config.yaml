@@ -23,7 +23,7 @@ model:
   whisper_path: "./whisper_path"
   beats_path: "./beats_path/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt"
 
-  ckpt: "/scratch/project_2014832/fang/code/SALMONN/output_dir/202510281443/checkpoint_best.pth" # model used for decoding
+  ckpt: "./output_dir_3d/202510292335/checkpoint_best.pth " # model used for decoding
 
   freeze_whisper: True
   freeze_beats: True
