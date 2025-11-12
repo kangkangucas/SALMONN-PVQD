@@ -55,6 +55,14 @@ def is_main_process():
 
 
 def init_distributed_mode(args):
+    # Check if distributed training is explicitly disabled in config
+    if hasattr(args, 'use_distributed') and not args.use_distributed:
+        print("Distributed training is disabled in config. Using single GPU mode.")
+        args.rank = 0
+        args.world_size = 1
+        args.gpu = 0
+        return
+
     if "RANK" in os.environ and "WORLD_SIZE" in os.environ:
         args.rank = int(os.environ["RANK"])
         args.world_size = int(os.environ["WORLD_SIZE"])
@@ -65,6 +73,9 @@ def init_distributed_mode(args):
     else:
         print("Not using distributed mode")
         args.use_distributed = False
+        args.rank = 0
+        args.world_size = 1
+        args.gpu = 0
         return
 
     args.use_distributed = True

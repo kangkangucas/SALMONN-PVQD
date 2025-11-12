@@ -99,7 +99,7 @@ class Runner:
         self.model.train()
 
         metric_logger = MetricLogger(delimiter="  ")
-        metric_logger.add_meter("lr", SmoothedValue(window_size=1, fmt="{value:.6f}"))
+        metric_logger.add_meter("lr", SmoothedValue(window_size=1, fmt="{value:.8f}"))
         metric_logger.add_meter("loss", SmoothedValue(window_size=1, fmt="{value:.4f}"))
 
         logging.info(
@@ -115,11 +115,19 @@ class Runner:
 
             samples = next(self.train_loader)
             samples = prepare_sample(samples, cuda_enabled=self.cuda_enabled)
-
+            
             self.scheduler.step(cur_epoch=epoch, cur_step=i)
 
             with torch.cuda.amp.autocast(enabled=self.use_amp):
                 loss = self.model(samples)["loss"]
+
+            # Check for NaN loss
+            if torch.isnan(loss) or torch.isinf(loss):
+                logging.warning(f"NaN/Inf loss detected at epoch {epoch}, iter {i}: {loss.item()}")
+                logging.warning(f"Learning rate: {self.optimizer.param_groups[0]['lr']}")
+                logging.warning(f"Skipping this batch")
+                self.optimizer.zero_grad()
+                continue
 
             if self.use_amp:
                 self.scaler.scale(loss).backward()
@@ -127,10 +135,14 @@ class Runner:
                 loss.backward()
 
             if (i + 1) % self.config.config.run.accum_grad_iters == 0:
+                # Gradient clipping to prevent exploding gradients
                 if self.use_amp:
+                    self.scaler.unscale_(self.optimizer)
+                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
                     self.scaler.step(self.optimizer)
                     self.scaler.update()
                 else:
+                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), max_norm=1.0)
                     self.optimizer.step()
                 self.optimizer.zero_grad()
 
@@ -140,7 +152,7 @@ class Runner:
         metric_logger.synchronize_between_processes()
         logging.info("Averaged stats: " + str(metric_logger.global_avg()))
         return {
-            k: "{:.3f}".format(meter.global_avg)
+            k: "{:.8f}".format(meter.global_avg) if k == "lr" else "{:.3f}".format(meter.global_avg)
             for k, meter in metric_logger.meters.items()
         }
 

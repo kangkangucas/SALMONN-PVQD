@@ -17,9 +17,16 @@ mkdir -p "$RESULTS_DIR"
 # List of checkpoints to evaluate
 # MODIFY THIS LIST WITH YOUR CHECKPOINT PATHS
 CHECKPOINTS=(
-    "output_dir_3d/202510292335/checkpoint_best.pth"
-    "output_dir_3d/202510292335/checkpoint_1.pth"
-    "output_dir_3d/202510292335/checkpoint_3.pth"
+    # "output_dir_3d/202510292335/checkpoint_best.pth"
+    "output_dir_3d/202510292335/checkpoint_1.pth" # best one
+    # "output_dir_3d/202510292335/checkpoint_3.pth"
+    # "output_dir/202511092248/checkpoint_best.pth"
+    # "output_dir/202511092248/checkpoint_3.pth"
+    # "output_dir/202511082251/checkpoint_best.pth"
+    # "output_dir/202511082251/checkpoint_1.pth" # 2rd best one
+    # "output_dir/202511091143/checkpoint_best.pth"
+    # "output_dir/202511091143/checkpoint_1.pth"   
+    # "output_dir/202511101148/checkpoint_3.pth"  
 )
 
 echo "=========================================="

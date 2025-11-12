@@ -132,7 +132,25 @@ class Tokenizers(nn.Module):
             fbank = ta_kaldi.fbank(waveform, num_mel_bins=128, sample_frequency=16000, frame_length=25, frame_shift=10)
             fbanks.append(fbank)
         fbank = torch.stack(fbanks, dim=0)
+
+        # CRITICAL FIX: Check for NaN/Inf before normalization
+        if torch.isnan(fbank).any() or torch.isinf(fbank).any():
+            print("[WARNING] Tokenizers.preprocess: fbank contains NaN/Inf before normalization")
+            # Replace NaN/Inf with fbank_mean to avoid propagation
+            fbank = torch.where(torch.isnan(fbank) | torch.isinf(fbank),
+                               torch.tensor(fbank_mean, dtype=fbank.dtype, device=fbank.device),
+                               fbank)
+
         fbank = (fbank - fbank_mean) / (2 * fbank_std)
+
+        # CRITICAL FIX: Check for NaN/Inf after normalization
+        if torch.isnan(fbank).any() or torch.isinf(fbank).any():
+            print("[WARNING] Tokenizers.preprocess: fbank contains NaN/Inf after normalization")
+            # Replace NaN/Inf with 0 to avoid propagation
+            fbank = torch.where(torch.isnan(fbank) | torch.isinf(fbank),
+                               torch.tensor(0.0, dtype=fbank.dtype, device=fbank.device),
+                               fbank)
+
         return fbank
 
     def extract_labels(

@@ -12,24 +12,61 @@
 
 set -euo pipefail
 
-# # 1) 准备环境
-# module purge
-# 按你的环境需要加载模块（例如 gcc/cuda 等），下行仅示例：
+echo "=========================================="
+echo "Starting SALMONN Training on Mahti"
+echo "=========================================="
+echo "Job ID: $SLURM_JOB_ID"
+echo "Node: $(hostname)"
+echo "Time: $(date)"
+echo ""
+
+# 1) 加载必要的模块
+echo "Loading modules..."
 module load gcc/11.2.0 cuda/11.5.0
 
-# 2) 激活你的虚拟环境
+# 2) 设置 CUDA 库路径 (关键!)
+echo "Setting CUDA environment variables..."
+export CUDA_HOME=/appl/spack/v017/install-tree/gcc-11.2.0/cuda-11.5.0-mg4ztb
+export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+export PATH=$CUDA_HOME/bin:$PATH
+
+# 3) 验证 CUDA 设置
+echo "Verifying CUDA setup..."
+echo "CUDA_HOME: $CUDA_HOME"
+echo "CUDA version:"
+nvcc --version | head -1
+echo ""
+
+# 4) 激活虚拟环境
+echo "Activating virtual environment..."
 export PATH="/projappl/project_2014832/fang_env/salmonn/bin:$PATH"
 
-# 3) 打印信息（可选）
-echo "SLURM_JOB_ID=${SLURM_JOB_ID}"
-nvidia-smi
-python -V
+# 5) 验证 Python 和 PyTorch
+echo "Verifying Python and PyTorch..."
+python --version
+python -c "import torch; print(f'PyTorch version: {torch.__version__}'); print(f'CUDA available: {torch.cuda.is_available()}'); print(f'CUDA device: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else \"N/A\"}')"
+echo ""
 
-# 4) 单卡启动（两种二选一）
+# 6) 显示 GPU 信息
+echo "GPU Information:"
+nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv,noheader
+echo ""
 
-# 4a) 直接 python（建议你在 config 里 use_distributed=False）
-# python -u train.py --cfg-path configs/config_pvqd.yaml
+# 7) 禁用 bitsandbytes CUDA 检查 (可选)
+export BNB_CUDA_VERSION=115
 
-# 4b) 如果保留 use_distributed=True，用 torchrun 单卡启动：
-torchrun --standalone --nproc_per_node=1 \
-  train.py --cfg-path configs/config_pvqd.yaml
+# 8) 设置 CUDA 可见设备
+export CUDA_VISIBLE_DEVICES=0
+
+# 9) 单卡启动 - 使用直接 Python (更稳定)
+echo "=========================================="
+echo "Starting training..."
+echo "=========================================="
+python -u train.py --cfg-path configs/config_pvqd.yaml
+
+echo ""
+echo "=========================================="
+echo "Training completed!"
+echo "Time: $(date)"
+echo "=========================================="
+

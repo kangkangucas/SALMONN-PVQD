@@ -76,6 +76,9 @@ def main():
     # build datasets
     multi_task = getattr(data_config, "multi_task", False)
 
+    # Get augmentation config (only for training set)
+    augmentation_config = getattr(data_config, "augmentation", {})
+
     if multi_task:
         # Multi-task training mode
         train_task_paths = getattr(data_config, "train_task_paths", {})
@@ -83,16 +86,36 @@ def main():
         test_task_paths = getattr(data_config, "test_task_paths", {})
 
         datasets = {
-            "train": MultiTaskDataset(train_task_paths, data_config.whisper_path),
-            "valid": MultiTaskDataset(valid_task_paths, data_config.whisper_path),
-            "test": MultiTaskDataset(test_task_paths, data_config.whisper_path),
+            "train": MultiTaskDataset(
+                train_task_paths,
+                data_config.whisper_path,
+                augmentation_config=augmentation_config
+            ),
+            "valid": MultiTaskDataset(
+                valid_task_paths,
+                data_config.whisper_path
+            ),
+            "test": MultiTaskDataset(
+                test_task_paths,
+                data_config.whisper_path
+            ),
         }
     else:
         # Single task training mode
         datasets = {
-            "train": SALMONNDataset(data_config.train_ann_path, data_config.whisper_path),
-            "valid": SALMONNDataset(data_config.valid_ann_path, data_config.whisper_path),
-            "test": SALMONNDataset(data_config.test_ann_path, data_config.whisper_path),
+            "train": SALMONNDataset(
+                data_config.train_ann_path,
+                data_config.whisper_path,
+                augmentation_config=augmentation_config
+            ),
+            "valid": SALMONNDataset(
+                data_config.valid_ann_path,
+                data_config.whisper_path
+            ),
+            "test": SALMONNDataset(
+                data_config.test_ann_path,
+                data_config.whisper_path
+            ),
         }
 
     # build runner

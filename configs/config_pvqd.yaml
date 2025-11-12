@@ -38,7 +38,7 @@ model:
   lora: True
   lora_rank: 8
   lora_alpha: 32
-  lora_dropout: 0.05
+  lora_dropout: 0.1
 
   multi_prompt: True
   prompt_template: "USER: {}\nASSISTANT:"
@@ -65,6 +65,19 @@ datasets:
     roughness: "fang_data_prepare/splits_pvqd/roughness_val.json"
     strain: "fang_data_prepare/splits_pvqd/strain_val.json"
 
+  # Audio Augmentation Configuration
+  # Set enable: True to enable augmentation during training
+  augmentation:
+    enable: False  # Set to True to enable augmentation
+    prob: 0.4     # Probability of applying augmentation to each sample (0-1)
+    types:        # List of augmentation types to randomly choose from
+      # - "speed"       # Time stretching (0.9x - 1.1x speed)
+      - "loudness"    # Loudness adjustment (-5 to +5 LUFS)
+      # Temporarily disabled to prevent NaN issues
+      - "crop"        # Random crop with VAD (0.5s - full length)
+      - "noise"       # Add background noise (SNR 15-30 dB)
+      # - "reverb"      # Add reverb effect (room scale 0.3-0.7)
+
   test_task_paths:
     breathiness: "fang_data_prepare/splits_pvqd/breathiness_test.json"
     roughness: "fang_data_prepare/splits_pvqd/roughness_test.json"
@@ -83,10 +96,10 @@ run:
 
   log_freq: 5
   epoch_based: False
-  iters_per_epoch: 200 # if 100, the loss is lower while the vaild agg_metrics is higher.
+  iters_per_epoch: 100 # if 100, the loss is lower while the vaild agg_metrics is higher.
   accum_grad_iters: 1
-  batch_size_train: 12
-  batch_size_eval: 12
+  batch_size_train: 12  # Reduced from 12 to 4 to avoid CUDA OOM with augmentation
+  batch_size_eval: 12   # Reduced from 12 to 4 to avoid CUDA OOM with augmentation
   num_workers: 8
 
   device: "cuda:0" 
@@ -99,9 +112,9 @@ run:
   optims:
     max_epoch: 6
     warmup_steps: 200
-    warmup_start_lr: 1e-6
-    init_lr: 3e-5
-    min_lr: 1e-5
+    warmup_start_lr: 1e-6  # Increased from 1e-6 to avoid learning rate becoming 0
+    init_lr: 1e-5
+    min_lr: 5e-6
     weight_decay: 0.05
     beta2: 0.999
 

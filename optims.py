@@ -74,7 +74,7 @@ class LinearWarmupCosineLRScheduler:
         total_cur_step = cur_epoch * self.iters_per_epoch + cur_step
         if total_cur_step < self.warmup_steps:
             warmup_lr_schedule(
-                step=cur_step,
+                step=total_cur_step,  # Fixed: use total_cur_step instead of cur_step
                 optimizer=self.optimizer,
                 max_step=self.warmup_steps,
                 init_lr=self.warmup_start_lr,
@@ -101,7 +101,12 @@ def cosine_lr_schedule(optimizer, epoch, max_epoch, init_lr, min_lr):
 
 def warmup_lr_schedule(optimizer, step, max_step, init_lr, max_lr):
     """Warmup the learning rate"""
-    lr = min(max_lr, init_lr + (max_lr - init_lr) * step / max(max_step, 1))
+    # Ensure max_step is at least 1 to avoid division by zero
+    max_step = max(max_step, 1)
+    # Linear warmup: gradually increase from init_lr to max_lr
+    lr = init_lr + (max_lr - init_lr) * step / max_step
+    # Ensure learning rate is not zero (minimum 1e-8)
+    lr = max(lr, 1e-8)
     for param_group in optimizer.param_groups:
         param_group["lr"] = lr
 
@@ -134,9 +139,27 @@ def get_optimizer(model, config):
         {"params": p_non_wd, "weight_decay": 0},
     ]
     beta2 = config.get("beta2", 0.999)
+
+    # IMPORTANT: Use warmup_start_lr as initial learning rate
+    # The scheduler will adjust it from warmup_start_lr to init_lr during warmup
+    # Handle both dict and OmegaConf objects
+    try:
+        # Try to get warmup_start_lr from config
+        warmup_start_lr_val = getattr(config, "warmup_start_lr", None)
+        if warmup_start_lr_val is None:
+            warmup_start_lr_val = config.get("warmup_start_lr", -1)
+        warmup_start_lr = float(warmup_start_lr_val)
+    except (TypeError, ValueError, AttributeError):
+        warmup_start_lr = -1
+
+    if warmup_start_lr < 0:
+        warmup_start_lr = float(config.init_lr)
+
+    logging.info(f"Optimizer initial learning rate: {warmup_start_lr}")
+
     optimizer = torch.optim.AdamW(
         optim_params,
-        lr=float(config.init_lr),
+        lr=warmup_start_lr,  # Start with warmup_start_lr, not init_lr
         weight_decay=float(config.weight_decay),
         betas=(0.9, beta2),
     )

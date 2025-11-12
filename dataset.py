@@ -22,7 +22,7 @@ import soundfile as sf
 import numpy as np
 from transformers import WhisperFeatureExtractor
 
-
+from audio_augmentation import AudioAugmentor
 class SALMONNDataset(Dataset):
     def __init__(self, ann_path, whisper_path):
         super().__init__()
@@ -96,7 +96,7 @@ class MultiTaskDataset(Dataset):
     A dataset class that combines multiple task datasets and samples them with balanced distribution.
     For each batch, it randomly selects similar numbers of samples from each task.
     """
-    def __init__(self, task_ann_paths, whisper_path):
+    def __init__(self, task_ann_paths, whisper_path, augmentation_config=None):
         """
         Args:
             task_ann_paths: List of tuples (task_name, ann_path) or dict {task_name: ann_path}
@@ -110,7 +110,20 @@ class MultiTaskDataset(Dataset):
         self.task_names = []
         self.task_indices = {}
         self.total_samples = 0
+        
+        
+        # Initialize augmentation
+        self.augmentation_config = augmentation_config or {}
+        self.enable_augmentation = self.augmentation_config.get("enable", False)
+        self.augmentation_prob = self.augmentation_config.get("prob", 0.5)
+        self.augmentation_types = self.augmentation_config.get(
+            "types", ["random"]
+        )
 
+        if self.enable_augmentation:
+            self.augmentor = AudioAugmentor(sr=16000)
+        else:
+            self.augmentor = None
         # Load all datasets
         # Convert OmegaConf DictConfig or dict to list of tuples
         if not isinstance(task_ann_paths, list):
@@ -161,7 +174,7 @@ class MultiTaskDataset(Dataset):
             "Q": Q,
             "id": id,
         }
-
+    
     def __getitem__(self, index):
         task_name, local_idx = self.index_mapping[index]
         ann = self.datasets[task_name][local_idx]
@@ -179,7 +192,38 @@ class MultiTaskDataset(Dataset):
         if len(audio) < sr:  # pad audio to at least 1s
             sil = np.zeros(sr - len(audio), dtype=float)
             audio = np.concatenate((audio, sil), axis=0)
+            
+        # # ======== 调试：增强前信息 ========
+        # print("\n[DEBUG before augmentation]")
+        # print(f"  shape: {audio.shape}, sr: {sr}, dtype: {audio.dtype}")
+        # print(f"  min={np.min(audio):.5f}, max={np.max(audio):.5f}, mean={np.mean(audio):.5f}, std={np.std(audio):.5f}")
+        # print(f"  has_nan={np.isnan(audio).any()}, has_inf={np.isinf(audio).any()}")
+
+        # Apply augmentation if enabled
+        if self.enable_augmentation and self.augmentor is not None:
+            aug_type = np.random.choice(self.augmentation_types)
+            # print(f"[DEBUG] Applying augmentation: {aug_type}")
+            audio = self.augmentor.apply_augmentation(
+                audio,
+                augmentation_type=aug_type,
+                prob=self.augmentation_prob
+            )
+        # # ======== 调试：增强后信息 ========
+        # print("[DEBUG after augmentation]")
+        # print(f"  shape: {audio.shape}, dtype: {type(audio)}, type: {type(audio)}")
+        # if isinstance(audio, torch.Tensor):
+        #     audio_np = audio.detach().cpu().numpy()
+        # else:
+        #     audio_np = np.array(audio)
+        # print(f"  min={np.min(audio_np):.5f}, max={np.max(audio_np):.5f}, mean={np.mean(audio_np):.5f}, std={np.std(audio_np):.5f}")
+        # print(f"  has_nan={np.isnan(audio_np).any()}, has_inf={np.isinf(audio_np).any()}")
+        # print(f"  abs>1 fraction={(np.abs(audio_np) > 1).mean():.6f}")
+
         audio = audio[: sr * 30]  # truncate audio to at most 30s
+
+        # # ======== 截断后信息 ========
+        # print("[DEBUG after truncation]")
+        # print(f"  final_len={len(audio)}, min={np.min(audio_np):.5f}, max={np.max(audio_np):.5f}")
 
         spectrogram = self.wav_processor(audio, sampling_rate=sr, return_tensors="pt")["input_features"].squeeze()
         text = ann["text"]
