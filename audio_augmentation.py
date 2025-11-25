@@ -43,19 +43,21 @@ class AudioAugmentor:
         Returns:
             Augmented audio array
         """
+        
         if np.random.random() > prob:
-            return audio.astype(np.float32)
-
+            # print("No apply_augmentation!!!")
+            return audio
+        
         # Check for invalid input
         if np.isnan(audio).any() or np.isinf(audio).any():
             print("Warning: Input audio contains NaN or Inf values")
-            return audio.astype(np.float32)
+            return audio
 
         if augmentation_type == 'random':
             # Randomly select an augmentation method
             methods = ['speed', 'loudness', 'crop', 'noise', 'reverb']
             augmentation_type = np.random.choice(methods)
-
+            print(f"Random augmentation type: {augmentation_type}")
         try:
             if augmentation_type == 'speed':
                 result = self.time_stretch(audio)
@@ -70,6 +72,7 @@ class AudioAugmentor:
             else:
                 result = audio
 
+
             if augmentation_type != 'crop':  # 增加crop的概率
                 if np.random.random() > 0.5:
                     result = self.random_crop_with_vad(result)
@@ -78,15 +81,15 @@ class AudioAugmentor:
             # Check output for NaN/Inf
             if np.isnan(result).any() or np.isinf(result).any():
                 print(f"Warning: Augmentation {augmentation_type} produced NaN/Inf, returning original audio")
-                return audio.astype(np.float32)
+                return audio
 
             # Ensure values are in reasonable range
             result = np.clip(result, -1.0, 1.0)
-            return result.astype(np.float32)
+            return result
 
         except Exception as e:
             print(f"Error in augmentation {augmentation_type}: {e}")
-            return audio.astype(np.float32)
+            return audio
     
     def time_stretch(self, audio, rate_range=(0.9, 1.1)):
         """
@@ -100,7 +103,7 @@ class AudioAugmentor:
             Time-stretched audio
         """
         # Ensure audio is in valid range before stretching
-        audio = np.clip(audio, -1.0, 1.0).astype(np.float32)
+        audio = np.clip(audio, -1.0, 1.0)
 
         rate = np.random.uniform(rate_range[0], rate_range[1])
         try:
@@ -109,27 +112,25 @@ class AudioAugmentor:
             # Ensure output is valid
             if stretched is None or len(stretched) == 0:
                 print(f"Warning: time_stretch produced empty output, returning original audio")
-                return audio.astype(np.float32)
+                return audio
 
             if np.isnan(stretched).any() or np.isinf(stretched).any():
                 print(f"Warning: time_stretch produced NaN/Inf, returning original audio")
-                return audio.astype(np.float32)
+                return audio
 
             # Clip to prevent extreme values
             stretched = np.clip(stretched, -1.0, 1.0)
 
-            # Ensure dtype is float32
-            stretched = stretched.astype(np.float32)
 
             # Final validation
             if np.isnan(stretched).any() or np.isinf(stretched).any():
                 print(f"Warning: Clipped audio still contains NaN/Inf, returning original")
-                return audio.astype(np.float32)
+                return audio
 
             return stretched
         except Exception as e:
             print(f"Error in time_stretch: {e}")
-            return audio.astype(np.float32)
+            return audio
     
     def loudness_augmentation(self, audio, loudness_range=(-5, 5)):
         """
@@ -170,9 +171,9 @@ class AudioAugmentor:
             # Final check after clipping
             if np.isnan(normalized).any() or np.isinf(normalized).any():
                 print("Warning: Audio contains NaN/Inf after clipping")
-                return audio.astype(np.float32)
+                return audio
 
-            return normalized.astype(np.float32)
+            return normalized
         except Exception as e:
             print(f"Error in loudness_augmentation: {e}")
             # Fallback to simple amplitude scaling
@@ -195,18 +196,18 @@ class AudioAugmentor:
         # Check for invalid scale
         if np.isnan(scale_linear) or np.isinf(scale_linear):
             print(f"Warning: Invalid scale_linear {scale_linear}, returning original audio")
-            return audio.astype(np.float32)
+            return audio
 
         scaled = audio * scale_linear
 
         # Check for NaN/Inf
         if np.isnan(scaled).any() or np.isinf(scaled).any():
             print(f"Warning: amplitude_scaling produced NaN/Inf, returning original audio")
-            return audio.astype(np.float32)
+            return audio
 
         # Clip to prevent clipping
         scaled = np.clip(scaled, -1.0, 1.0)
-        return scaled.astype(np.float32)
+        return scaled
     
     def random_crop_with_vad(self, audio, min_duration=1, max_duration=None):
         """
@@ -228,12 +229,12 @@ class AudioAugmentor:
         max_samples = int(max_duration * self.sr)
 
         if len(audio) <= min_samples:
-            return audio.astype(np.float32)
+            return audio
 
         # Check if audio is all silence
         if np.max(np.abs(audio)) < 1e-6:
             # All silence, return original audio
-            return audio.astype(np.float32)
+            return audio
 
         # Simple VAD: detect non-silent frames
         # Use energy-based VAD
@@ -253,7 +254,7 @@ class AudioAugmentor:
             # If no active frames, just do random crop
             start = np.random.randint(0, len(audio) - min_samples)
             end = min(start + max_samples, len(audio))
-            return audio[start:end].astype(np.float32)
+            return audio[start:end]
 
         # Find continuous active regions
         active_start = active_frames[0] * hop_length
@@ -262,7 +263,7 @@ class AudioAugmentor:
         # Ensure we have enough active audio
         active_duration = (active_end - active_start) / self.sr
         if active_duration < min_duration:
-            return audio.astype(np.float32)  # Not enough active audio
+            return audio  # Not enough active audio
 
         # Random crop within active region
         crop_length = np.random.randint(min_samples, min(max_samples, active_end - active_start))
@@ -270,12 +271,12 @@ class AudioAugmentor:
         start = np.random.randint(active_start, max(active_start + 1, max_start))
         end = min(start + crop_length, len(audio))
 
-        cropped = audio[start:end].astype(np.float32)
+        cropped = audio[start:end]
 
         # Ensure cropped audio is not all silence
         if np.max(np.abs(cropped)) < 1e-6:
             # If cropped audio is all silence, return original
-            return audio.astype(np.float32)
+            return audio
 
         return cropped
     
@@ -302,7 +303,7 @@ class AudioAugmentor:
         # Avoid division by zero
         if noise_power < 1e-10:
             print("Warning: noise_power too small, returning original audio")
-            return audio.astype(np.float32)
+            return audio
 
         # Scale noise to achieve target SNR
         snr_linear = 10 ** (snr / 10.0)
@@ -311,17 +312,17 @@ class AudioAugmentor:
         # Check for NaN/Inf
         if np.isnan(noise_scaled).any() or np.isinf(noise_scaled).any():
             print("Warning: add_noise produced NaN/Inf, returning original audio")
-            return audio.astype(np.float32)
+            return audio
 
         noisy = audio + noise_scaled
 
         # Check for NaN/Inf
         if np.isnan(noisy).any() or np.isinf(noisy).any():
             print("Warning: noisy audio contains NaN/Inf, returning original audio")
-            return audio.astype(np.float32)
+            return audio
 
         noisy = np.clip(noisy, -1.0, 1.0)
-        return noisy.astype(np.float32)
+        return noisy
     
     def add_reverb(self, audio, room_scale_range=(0.1, 0.5)):
         """
@@ -340,11 +341,11 @@ class AudioAugmentor:
         ir_len = int(0.5 * self.sr)  # ≈500 ms
         t = np.arange(ir_len, dtype=np.float32) / float(self.sr)
         tau = room_scale * 0.35  # 衰减常数，可微调（单位：秒）
-        decay = np.exp(-t / max(tau, 1e-4)).astype(np.float32)
+        decay = np.exp(-t / max(tau, 1e-4))
 
         # 随机扩散：高斯+轻微高通让反射更“亮”，避免纯低通
         rng = np.random.default_rng()
-        noise = rng.normal(0.0, 1.0, size=ir_len).astype(np.float32)
+        noise = rng.normal(0.0, 1.0, size=ir_len)
         # 简单一阶高通（去点直流，减少“糊”）
         alpha = 0.95
         for n in range(1, ir_len):
@@ -362,7 +363,7 @@ class AudioAugmentor:
         ir_energy = float(np.sum(ir * ir))  # == ||h||_2^2
         if ir_energy < 1e-20 or np.isnan(ir_energy) or np.isinf(ir_energy):
             print("Warning: Invalid IR energy, returning original audio")
-            return audio.astype(np.float32)
+            return audio
         ir = ir / np.sqrt(ir_energy + eps)
 
         # Convolve with audio
@@ -389,13 +390,13 @@ class AudioAugmentor:
             # Check for NaN/Inf
             if np.isnan(reverb).any() or np.isinf(reverb).any():
                 print("Warning: add_reverb produced NaN/Inf, returning original audio")
-                return audio.astype(np.float32)
+                return audio
 
             reverb = np.clip(reverb, -1.0, 1.0)
-            return reverb.astype(np.float32)
+            return reverb
         except Exception as e:
             print(f"Error in add_reverb: {e}")
-            return audio.astype(np.float32)
+            return audio
 
 
 def augment_audio_file(input_path, output_path, augmentation_type='random', prob=0.5, sr=16000):

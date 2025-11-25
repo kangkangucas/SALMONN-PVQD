@@ -166,3 +166,5 @@ launch.sh
 /output
 arnold.sh
 /configs_local
+10002_00009.wav
+run_training.sh

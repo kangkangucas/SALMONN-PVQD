@@ -68,7 +68,7 @@ datasets:
   # Audio Augmentation Configuration
   # Set enable: True to enable augmentation during training
   augmentation:
-    enable: False  # Set to True to enable augmentation
+    enable: True  # Set to True to enable augmentation
     prob: 0.4     # Probability of applying augmentation to each sample (0-1)
     types:        # List of augmentation types to randomly choose from
       # - "speed"       # Time stretching (0.9x - 1.1x speed)
@@ -96,7 +96,7 @@ run:
 
   log_freq: 5
   epoch_based: False
-  iters_per_epoch: 100 # if 100, the loss is lower while the vaild agg_metrics is higher.
+  iters_per_epoch: 200 # if 100, the loss is lower while the vaild agg_metrics is higher.
   accum_grad_iters: 1
   batch_size_train: 12  # Reduced from 12 to 4 to avoid CUDA OOM with augmentation
   batch_size_eval: 12   # Reduced from 12 to 4 to avoid CUDA OOM with augmentation
@@ -110,7 +110,7 @@ run:
 
   # optimizer & scheduler
   optims:
-    max_epoch: 6
+    max_epoch: 15
     warmup_steps: 200
     warmup_start_lr: 1e-6  # Increased from 1e-6 to avoid learning rate becoming 0
     init_lr: 1e-5
