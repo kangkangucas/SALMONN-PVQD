@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --job-name=train-pvqd
-#SBATCH --account=project_2014832
+#SBATCH --account=project_2017420
 #SBATCH --partition=gpusmall
 #SBATCH --ntasks=1
 #SBATCH --gres=gpu:a100:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
-#SBATCH --time=5:00:00
+#SBATCH --time=20:30:00
 #SBATCH --output=logs/%x-%j.out
 #SBATCH --error=logs/%x-%j.err
 
@@ -34,7 +34,7 @@ echo ""
 
 # 4) 激活虚拟环境
 echo "Activating virtual environment..."
-export PATH="/projappl/project_2014832/fang_env/salmonn/bin:$PATH"
+export PATH="/projappl/project_2011211/fang_env/salmonn/bin:$PATH"
 
 # 5) 验证 Python 和 PyTorch
 echo "Verifying Python and PyTorch..."
@@ -62,24 +62,32 @@ echo "=========================================="
 echo ""
 
 # Change to working directory
-cd /scratch/project_2014832/fang/code/SALMONN
+cd /scratch/project_2011211/fang/code/SALMONN
 
 # Run inference
+python infer_pseudo_labels.py \
+    --audio-dir /scratch/project_2011211/fang/data/DH-FaceVid-1K_extracted_wav \
+    --output-csv /scratch/project_2011211/fang/data/pseudo_labels_dh_facevid_1k_202511162233.csv \
+    --ckpt-path output_dir/202511162233/checkpoint_3.pth \
+    --cfg-path configs/config_pvqd.yaml \
+    --device cuda:0 \
+    --batch-size 1
+
 # python infer_pseudo_labels.py \
-#     --audio-dir /scratch/project_2014832/fang/data/DH-FaceVid-1K_extracted_wav \
-#     --output-csv /scratch/project_2014832/fang/data/pseudo_labels_dh_facevid_1k_202511131805.csv \
-#     --ckpt-path output_dir/202511131805/checkpoint_1.pth \
+#     --audio-dir /scratch/project_2011211/fang/data/mvlrs_v1_personalemb/test_audios \
+#     --output-csv /scratch/project_2011211/fang/data/mvlrs_v1_personalemb/pseudo_labels_lrs2_test_audios_aug_202511162233.csv \
+#     --ckpt-path output_dir/202511162233/checkpoint_3.pth \
 #     --cfg-path configs/config_pvqd.yaml \
 #     --device cuda:0 \
 #     --batch-size 1
 
-python infer_pseudo_labels.py \
-    --audio-dir /scratch/project_2011211/fang/data/mvlrs_v1_personalemb/train_audios \
-    --output-csv /scratch/project_2011211/fang/data/mvlrs_v1_personalemb/pseudo_labels_train_audios_aug_202511162149.csv \
-    --ckpt-path output_dir/202511162149/checkpoint_4.pth \
-    --cfg-path configs/config_pvqd.yaml \
-    --device cuda:0 \
-    --batch-size 1
+# python infer_pseudo_labels.py \
+#     --audio-dir /scratch/project_2011211/fang/data/HDTF/hdtf_numbering/audios_val \
+#     --output-csv /scratch/project_2011211/fang/data/HDTF/hdtf_numbering/pseudo_labels_hdtf_audios_val_aug_202511162233.csv \
+#     --ckpt-path output_dir/202511162233/checkpoint_3.pth \
+#     --cfg-path configs/config_pvqd.yaml \
+#     --device cuda:0 \
+#     --batch-size 1
 
 echo ""
 echo "=========================================="

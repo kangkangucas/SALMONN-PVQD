@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+# Usage:
+# python compute_nasalization_index.py --input_dir /scratch/project_2011211/fang/data/DH-FaceVid-1K_extracted_wav  --output_csv brightness_nasalization_lables_dh_facevid_1k_all.csv
 """
 Compute nasalization- and brightness-related acoustic features from WAV files.
 
@@ -420,7 +421,7 @@ def main():
                         help="Target sample rate (default: 16000).")
     parser.add_argument("--min_valid_frames", type=int, default=20,
                         help="Minimum voiced frames to keep a file.")
-    parser.add_argument("--output_csv", type=str, default="nasalization_results.csv",
+    parser.add_argument("--output_csv", type=str, default="brightness_nasalization_lables_lrs2_train.csv",
                         help="Output CSV filename for directory mode.")
     args = parser.parse_args()
 
@@ -501,3 +502,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    
+    
